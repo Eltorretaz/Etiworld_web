@@ -1,0 +1,24 @@
+{
+  "name": "etiworld_web",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Uneweb-blue)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:styles": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eltorretaz/Etiworld_web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eltorretaz/Etiworld_web/issues"
+  },
+  "homepage": "https://github.com/Eltorretaz/Etiworld_web#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.13",
+    "tailwindcss": "^4.1.13"
+  }
+}
