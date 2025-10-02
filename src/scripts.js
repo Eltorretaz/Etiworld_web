@@ -25,7 +25,9 @@ const menuButton = document.getElementById('menu-button');
 const images = [
     '/assets/entrega-1.jpeg',
     '/assets/entrega-2.jpeg',
-    '/assets/entrega-3.jpeg'
+    '/assets/entrega-3.jpeg',
+    '/assets/entrega-4.jpeg',
+    '/assets/entrega-5.jpeg'
 ];
 let currentIndex = 0;
 // La duración de la transición en milisegundos debe coincidir con 'duration-1000' de Tailwind.
@@ -37,7 +39,7 @@ const INTERVAL_DELAY = 3000;
 setInterval(() => {
     // 1. Inicia el Fade-Out: aplica la clase de Tailwind 'opacity-0'
     carruselImage.classList.remove('opacity-100');
-    carruselImage.classList.add('opacity-30');
+    carruselImage.classList.add('opacity-0');
 
     // 2. Espera a que termine el Fade-Out (TRANSITION_DURATION)
     setTimeout(() => {
