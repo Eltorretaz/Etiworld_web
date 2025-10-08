@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html>        
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,128 +7,183 @@
   <script src="./src/scripts.js" defer></script>
 </head>
 <body class="dark:bg-gray-800">
-<header class="bg-gray-950">
-    <div class="mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between">
-        <h1 class="text-3xl font-bold text-green-500">
-            ETIWORLD
-        </h1>
-        <!-- From Uiverse.io by nihad-abbasov --> 
-        <div class="text-white gap-6 flex items-center mr-3">
-            <div class="relative inline-block text-left">
-                <button id="menu-button" type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-green-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus:outline-none" aria-expanded="false" aria-haspopup="true">
-                    Redes sociales
-                    <svg class="-mr-1 h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                        <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.063a.75.75 0 111.08 1.04l-4.25 4.667a.75.75 0 01-1.08 0l-4.25-4.667a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                    </svg>
-                 </button>
-                 <div id="dropdown-menu" class="hidden absolute right-0 z-10 mt-2 w-44 origin-top-right rounded-md bg-gray-950 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
-                    <div class="py-1">
-                        <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-green-600">Whatsapp</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-green-600">Instagram</a>
-                        <a href="#" class="block px-4 py-2 text-sm text-white hover:bg-green-600">Mercado libre</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-<main>
+  <header class="bg-gray-950 relative z-10">
+      <div class="mx-auto py-6 px-4 sm:px-6 lg:px-8 flex justify-between">
+          <h1 class="text-3xl font-bold text-green-500">
+              ETIWORLD
+          </h1>
+          <!-- From Uiverse.io by nihad-abbasov --> 
+          <div class="text-white gap-6 flex items-center mr-3">
+              <div class="relative inline-block text-left">
+                  <button id="menu-button" type="button" class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-green-500 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-green-600 focus:outline-none" aria-expanded="false" aria-haspopup="true">
+                      Redes sociales
+                      <svg class="-mr-1 h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                          <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.293l3.71-4.063a.75.75 0 111.08 1.04l-4.25 4.667a.75.75 0 01-1.08 0l-4.25-4.667a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                      </svg>
+                   </button>
+                   <div id="dropdown-menu" class="hidden absolute right-0 z-10 mt-2 w-44 origin-top-right rounded-md bg-gray-950 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                      <div class="py-1">
+                          <a href="https://w.app/etiworld" target="_blank" class="block px-4 py-2 text-sm text-white hover:bg-green-600">Whatsapp</a>
+                          <a href="https://www.instagram.com/inversionesetiworld" target="_blank" class="block px-4 py-2 text-sm text-white hover:bg-green-600">Instagram</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <main>
     <!-- Sobre nosotros -->
-  <div class="relative w-full h-96 md:h-[500px] flex justify-center items-center">
-    <div class="absolute inset-0 bg-[url('/assets/entrega-1.jpeg')] bg-cover bg-center blur-[2px] transition-opacity duration-1000 ease-in-out opacity-100" id="carrusel-image"></div>
-    <div class="relative z-10 w-full uppercase py-10 sm:py-20 bg-gray-800 px-5 sm:p-20 items-center flex flex-col">
-        <h2 class="text-4xl sm:text-6xl textfont-bold mb-10 text-green-600 dark:text-green-400 text-center">Sobre nosotros</h2>
-        <p class="text-gray-700 dark:text-gray-200 mb-2 text-center">Somos una fábrica dedicada a la producción de etiquetas autoadhesivas.<br>Calidad, personalización y servicio para tu empresa.</p>
-    </div>
-  </div>
-
-    <!-- Etiworld CA -->
-    <div class="bg-gray-100 dark:bg-gray-800">
-        <section class="flex justify-center items-center">
-            <div class="w-full bg-white dark:bg-gray-800 py-10 px-8 sm:px-16">
-                <h2 class="text-2xl  font-bold pl-5 mb-4 text-gray-800 dark:text-white uppercase">Etiworld C.A</h2>
-                <p class="text-gray-600 dark:text-gray-300 mb-4 w-full">Una fábrica de etiquetas autoadhesivas se especializa en el diseño, producción y comercialización de etiquetas que cuentan con una capa adhesiva en su reverso, permitiendo su fácil aplicación en diversos productos y superficies. Estas etiquetas pueden ser personalizadas en tamaño, forma, color y material, adaptándose a las necesidades de cada cliente y sector, como alimentos, cosméticos, logística, farmacéutica y más. El proceso de fabricación incluye impresión de alta calidad, corte preciso y control de calidad, garantizando durabilidad, adherencia y presentación profesional. Además, la fábrica puede ofrecer asesoría técnica y soluciones innovadoras para optimizar la identificación y presentación de productos.</p>
-            </div>
-        </section>
-    </div>
-
-    <!-- tarjetas de informacion -->
-    <div class="bg-gray-900 py-8">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
-          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
-            <img src="https://via.placeholder.com/150x100?text=Foto+1" alt="Foto 1" class="mb-4 rounded w-full h-32 object-cover">
-            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Tarjeta 1</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-center">Descripción de la tarjeta 1.</p>
-          </section>
-          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
-            <img src="https://via.placeholder.com/150x100?text=Foto+2" alt="Foto 2" class="mb-4 rounded w-full h-32 object-cover">
-            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Tarjeta 2</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-center">Descripción de la tarjeta 2.</p>
-          </section>
-          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
-            <img src="https://via.placeholder.com/150x100?text=Foto+3" alt="Foto 3" class="mb-4 rounded w-full h-32 object-cover">
-            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Tarjeta 3</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-center">Descripción de la tarjeta 3.</p>
-          </section>
-          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
-            <img src="https://via.placeholder.com/150x100?text=Foto+4" alt="Foto 4" class="mb-4 rounded w-full h-32 object-cover">
-            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Tarjeta 4</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-center">Descripción de la tarjeta 4.</p>
-          </section>
-          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
-            <img src="https://via.placeholder.com/150x100?text=Foto+3" alt="Foto 5" class="mb-4 rounded w-full h-32 object-cover">
-            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Tarjeta 5</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-center">Descripción de la tarjeta 5.</p>
-          </section>
-          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
-            <img src="https://via.placeholder.com/150x100?text=Foto+4" alt="Foto 6" class="mb-4 rounded w-full h-32 object-cover">
-            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Tarjeta 6</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-center">Descripción de la tarjeta 6.</p>
-          </section>
-          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
-            <img src="https://via.placeholder.com/150x100?text=Foto+5" alt="Foto 7" class="mb-4 rounded w-full h-32 object-cover">
-            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Tarjeta 7</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-center">Descripción de la tarjeta 7.</p>
-          </section>
-          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
-            <img src="https://via.placeholder.com/150x100?text=Foto+6" alt="Foto 8" class="mb-4 rounded w-full h-32 object-cover">
-            <h3 class="text-lg font-bold mb-2/ text-green-600 dark:text-green-400">Tarjeta 8</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-center">Descripción de la tarjeta 8.</p>
-          </section>
-          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center">
-            <img src="https://via.placeholder.com/150x100?text=Foto+7" alt="Foto 9" class="mb-4 rounded w-full h-32 object-cover">
-            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Tarjeta 9</h3>
-            <p class="text-gray-600 dark:text-gray-300 text-center">Descripción de la tarjeta 9.</p>
-          </section>
-        </div>
+    <div class="relative w-full h-96 md:h-[500px] flex justify-center items-center">
+      <div class="absolute z-0 inset-0 bg-[url('/assets/entrega-1.jpeg')] bg-cover bg-center blur-[2px] transition-opacity duration-300 ease-in-out opacity-100" id="carrusel-image"></div>
+      <div class="relative w-full uppercase py-10 sm:py-20 bg-gray-800 px-5 sm:p-20 items-center flex flex-col">
+          <h2 class="text-4xl sm:text-6xl textfont-bold mb-10 text-green-600 dark:text-green-400 text-center">Sobre nosotros</h2>
+          <p class="text-gray-700 dark:text-gray-200 mb-2 text-center">Somos una fábrica dedicada a la producción de etiquetas autoadhesivas.<br>Calidad, personalización y servicio para tu empresa.</p>
       </div>
     </div>
+
+    <!-- Etiworld CA -->
+      <div class="bg-gray-100 dark:bg-gray-800 relative">
+          <section class="flex justify-center items-center">
+              <div class="w-full bg-white dark:bg-gray-800 py-10 px-8 sm:px-16">
+                  <h2 class="text-2xl  font-bold pl-5 mb-4 text-gray-800 dark:text-white uppercase">Etiworld C.A</h2>
+                  <p class="text-gray-600 dark:text-gray-300 mb-4 w-full">Una fábrica de etiquetas autoadhesivas se especializa en el diseño, producción y comercialización de etiquetas que cuentan con una capa adhesiva en su reverso, permitiendo su fácil aplicación en diversos productos y superficies. Estas etiquetas pueden ser personalizadas en tamaño, forma, color y material, adaptándose a las necesidades de cada cliente y sector, como alimentos, cosméticos, logística, farmacéutica y más. El proceso de fabricación incluye impresión de alta calidad, corte preciso y control de calidad, garantizando durabilidad, adherencia y presentación profesional. Además, la fábrica puede ofrecer asesoría técnica y soluciones innovadoras para optimizar la identificación y presentación de productos.</p>
+              </div>
+          </section>
+      </div>
+
+    
 
     <!-- Nuestra Misión -->
     <div class="w-full mx-auto">
         <section class="flex justify-center items-center">
-            <div class="w-full bg-white dark:bg-gray-800 py-10 px-8 sm:px-16">
+            <div class="w-full bg-white dark:bg-gray-900 py-10 px-8 sm:px-16">
                 <h2 class="text-2xl font-bold pl-5 mb-4 text-gray-800 dark:text-white uppercase">Nuestra Misión</h2>
                 <p class="text-gray-600 dark:text-gray-300 mb-4 w-full">En Etiworld, nuestra misión es proporcionar soluciones de etiquetado innovadoras y de alta calidad que ayuden a nuestros clientes a destacar en el mercado. Nos comprometemos a la excelencia en cada etapa del proceso, desde el diseño hasta la entrega, asegurando la satisfacción del cliente y el cumplimiento de sus necesidades específicas.</p>
             </div>
         </section>
     </div>
-
     <!-- Nuestros orígenes -->
     <div class="bg-gray-100 dark:bg-gray-800">
         <section class="flex justify-center items-center">
-            <div class="w-full bg-white dark:bg-gray-900 py-10 px-8 sm:px-16 h-96 content-center">
+            <div class="w-full bg-white dark:bg-gray-800 py-10 px-8 sm:px-16 h-96 content-center">
                 <h2 class="text-2xl font-bold pl-5 mb-4 text-gray-800 dark:text-white uppercase">Nuestros orígenes</h2>
-                <p class="text-gray-600 dark:text-gray-300 mb-4 w-full">Etiworld nació de la visión de un grupo de emprendedores apasionados por la impresión y el diseño gráfico. Con años de experiencia en la industria, identificaron una oportunidad para ofrecer etiquetas autoadhesivas personalizadas que combinaran calidad, innovación y servicio al cliente. Desde nuestros humildes comienzos, hemos crecido hasta convertirnos en una fábrica reconocida, siempre manteniendo nuestro compromiso con la excelencia y la satisfacción del cliente.</p>
+                <p class="text-gray-600 dark:text-gray-300 mb-4 w-full">Etiworld nació en 2008 de la visión de un grupo de emprendedores apasionados por la impresión y el diseño gráfico. Con años de experiencia en la industria, identificaron una oportunidad para ofrecer etiquetas autoadhesivas personalizadas que combinaran calidad, innovación y servicio al cliente. Desde nuestros humildes comienzos, hemos crecido hasta convertirnos en una fábrica reconocida, siempre manteniendo nuestro compromiso con la excelencia y la satisfacción del cliente.</p>
             </div>
         </section>
-
-</main>
-<footer class="bg-gray-950 text-white py-4">
-    <div class="container mx-auto text-center">
-        <p>&copy; 2024 Etiworld. Todos los derechos reservados.</p>
     </div>
+
+
+    <!-- tarjetas de informacion -->
+    <div class="bg-gray-900 py-8">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-1.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Etiquetas Autoadhesivas 57x44 mm</h3>
+            <p class="text-gray-600 dark:text-gray-300">CAPEL para balanzas 500 etq.  la caja de 60 rollos.</p>
+            <a href="https://wa.me/p/25157324617244747/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-2.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Etiquetas Autoadhesivas 57x40 mm</h3>
+            <p class="text-gray-600 dark:text-gray-300">Rollos de 500 etq para balanzas y cajas 60 rollos.</p>
+            <a href="https://wa.me/p/8265661533451190/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-3.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Impresiones Full color y diferentes Materiales</h3>
+            <p class="text-gray-600 dark:text-gray-300">Indícanos las medidas y con gusto le cotizamos.</p>
+            <a href="https://wa.me/p/7809337055763522/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-4.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Impresiones 1 color , código de barras etc</h3>
+            <p class="text-gray-600 dark:text-gray-300">Indícanos las medidas y con gusto le cotizamos.</p>
+            <a href="https://wa.me/p/7391645997621524/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-5.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Etiquetas Fondeadas</h3>
+            <p class="text-gray-600 dark:text-gray-300">En termico y Litho, indicar medida para precio.</p>
+            <a href="https://wa.me/p/7153566708074755/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-6.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Etiquetas Autoadhesivas para impresoras</h3>
+            <p class="text-gray-600 dark:text-gray-300">DYMO, indicar la medida para precio.</p>
+            <a href="https://wa.me/p/7226895307423375/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-7.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Rollos continuos para impresora Brother</h3>
+            <p class="text-gray-600 dark:text-gray-300">29 mm x 30 MTS , térmicos.</p>
+            <a href="https://wa.me/p/7374967352551541/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-8.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Rollos continuos para impresora Brother</h3>
+            <p class="text-gray-600 dark:text-gray-300">62 mm x 30 MTS papel termico protegido.</p>
+            <a href="https://wa.me/p/7796556800355712/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-9.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Etiquetas Autoadhesivas 10x15 CM</h3>
+            <p class="text-gray-600 dark:text-gray-300">Rollos de 500 etiquetas , térmicos.</p>
+            <a href="https://wa.me/p/7896092230422062/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-10.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Etiquetas Autoadhesivas 57x19 mm</h3>
+            <p class="text-gray-600 dark:text-gray-300">Rollos de 1500 etq, termico directo.</p>
+            <a href="https://wa.me/p/7287100691327230/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-11.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Etiquetas Autoadhesivas 57x32 mm</h3>
+            <p class="text-gray-600 dark:text-gray-300">Papel termico protegido rollos de 1000 etq. Paquete de 10 rollos, cajas de 30 y 50 rollos.</p>
+            <a href="https://wa.me/p/7641260022629480/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-12.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Etiquetas Autoadhesivas 32x25 mm y 30 x 25 mm</h3>
+            <p class="text-gray-600 dark:text-gray-300">En papel termico rollos de 1000 etq. Tenemos varias presentaciones paquetes de 10 rollos, cajas de 30 rollos, 50 rollos.</p>
+            <a href="https://wa.me/p/7759653770761215/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-13.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Etiquetas Autoadhesivas 10x10 CM</h3>
+            <p class="text-gray-600 dark:text-gray-300">Rollos de 500 etiquetas , térmicos.</p>
+            <a href="https://wa.me/p/25525463497067828/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-14.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Rollos térmicos 57x40 mm</h3>
+            <p class="text-gray-600 dark:text-gray-300">Para puntos de Ventas cajas de 200 rollos.</p>
+            <a href="https://wa.me/p/7031419626981445/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-15.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Rollos Térmicos 80x65 mm</h3>
+            <p class="text-gray-600 dark:text-gray-300">Para impresora Fiscal Cajas de 60 rollos, promocion solo en Divisas. 🤑</p>
+            <a href="https://wa.me/p/6899254536843107/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+          <section class="p-4 bg-white dark:bg-gray-800 rounded-lg shadow-md flex flex-col items-center w-[350px]">
+            <img src="./assets/tarjeta-16.jpeg" alt="Foto 1" class="mb-4 rounded w-64 sm:w-72">
+            <h3 class="text-lg font-bold mb-2 text-green-600 dark:text-green-400">Etiquetas Autoadhesivas para Joyería</h3>
+            <p class="text-gray-600 dark:text-gray-300">Termico directo rollos de 1000 etq Paquete de 10 rollos en 50$</p>
+            <a href="https://wa.me/p/7619090088145745/584122616620" class="text-blue-500 hover:underline">Ir a añadir al carrito ></a>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+   
+  <footer class="bg-gray-950 text-white py-4">
+      <div class="container mx-auto text-center">
+          <p>&copy; 2024 Etiworld. Todos los derechos reservados.</p>
+      </div>
+  </footer>
 </body>
 </html>
-

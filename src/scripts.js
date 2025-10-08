@@ -23,17 +23,17 @@ const menuButton = document.getElementById('menu-button');
 
     const carruselImage = document.getElementById('carrusel-image');
 const images = [
-    '/assets/entrega-1.jpeg',
-    '/assets/entrega-2.jpeg',
-    '/assets/entrega-3.jpeg',
-    '/assets/entrega-4.jpeg',
-    '/assets/entrega-5.jpeg'
+    './assets/entrega-1.jpeg',
+    './assets/entrega-2.jpeg',
+    './assets/entrega-3.jpeg',
+    './assets/entrega-4.jpeg',
+    './assets/entrega-5.jpeg'
 ];
 let currentIndex = 0;
 // La duración de la transición en milisegundos debe coincidir con 'duration-1000' de Tailwind.
-const TRANSITION_DURATION = 1000;
-// El intervalo total de 5000ms (5 segundos) debe incluir el tiempo de la transición.
-const INTERVAL_DELAY = 3000;
+const TRANSITION_DURATION = 200;
+// El intervalo total de 4000ms (4 segundos) debe incluir el tiempo de la transición.
+const INTERVAL_DELAY = 4000;
 
 
 setInterval(() => {
