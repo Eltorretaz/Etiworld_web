@@ -10,7 +10,6 @@ const menuButton = document.getElementById('menu-button');
         }
     });
 
-
     const carruselImage = document.getElementById('carrusel-image');
 const images = [
     './assets/entrega/entrega-1.jpeg',
