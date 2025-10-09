@@ -16,7 +16,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://eltorretaz.github.io/Odin_recipes_Armando_26august23/)
+[Live Demo Link](https://eltorretaz.github.io/Etiworld_web/)
 
 
 ## Getting Started
@@ -52,7 +52,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Eltorretaz/Odin_recipes_Armando_26august23/issues).
+Feel free to check the [issues page](https://github.com/Eltorretaz/Etiworld_web/issues).
 
 ## Show your support
 
