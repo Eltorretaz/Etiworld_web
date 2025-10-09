@@ -23,11 +23,11 @@ const menuButton = document.getElementById('menu-button');
 
     const carruselImage = document.getElementById('carrusel-image');
 const images = [
-    './assets/entrega-1.jpeg',
-    './assets/entrega-2.jpeg',
-    './assets/entrega-3.jpeg',
-    './assets/entrega-4.jpeg',
-    './assets/entrega-5.jpeg'
+    './assets/entrega/entrega-1.jpeg',
+    './assets/entrega/entrega-2.jpeg',
+    './assets/entrega/entrega-3.jpeg',
+    './assets/entrega/entrega-4.jpeg',
+    './assets/entrega/entrega-5.jpeg'
 ];
 let currentIndex = 0;
 // La duración de la transición en milisegundos debe coincidir con 'duration-1000' de Tailwind.
