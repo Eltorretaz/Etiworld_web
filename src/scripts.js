@@ -1,40 +1,3 @@
-const sliderTrack = document.getElementById('slider-track');
-      const images = sliderTrack.querySelectorAll('img');
-      const prevBtn = document.getElementById('slider-prev');
-      const nextBtn = document.getElementById('slider-next');
-      const dots = document.querySelectorAll('#slider-dots button');
-      let current = 0;
-
-      function updateSlider(index) {
-        sliderTrack.style.transform = `translateX(-${index * 100}%)`;
-        dots.forEach((dot, i) => {
-          dot.style.opacity = i === index ? '0.7' : '0.3';
-        });
-      }
-
-      prevBtn.onclick = () => {
-        current = (current - 1 + images.length) % images.length;
-        updateSlider(current);
-      };
-
-      nextBtn.onclick = () => {
-        current = (current + 1) % images.length;
-        updateSlider(current);
-      };
-
-      dots.forEach(dot => {
-        dot.onclick = () => {
-          current = Number(dot.dataset.index);
-          updateSlider(current);
-        };
-      });
-
-      // Optional: auto-slide
-      // setInterval(() => {
-      //   nextBtn.click();
-      // }, 5000);
-
-
 
 const menuButton = document.getElementById('menu-button');
     const dropdownMenu = document.getElementById('dropdown-menu');
@@ -49,7 +12,7 @@ const menuButton = document.getElementById('menu-button');
 
 
     const carruselImage = document.getElementById('carrusel-image');
-const imagess = [
+const images = [
     './assets/entrega/entrega-1.jpeg',
     './assets/entrega/entrega-2.jpeg',
     './assets/entrega/entrega-3.jpeg',
@@ -72,7 +35,7 @@ setInterval(() => {
     setTimeout(() => {
         // 3. Cambia la imagen mientras es invisible
         currentIndex = (currentIndex + 1) % images.length;
-        carruselImage.style.backgroundImage = `url('${imagess[currentIndex]}')`;
+        carruselImage.style.backgroundImage = `url('${images[currentIndex]}')`;
 
         // 4. Inicia el Fade-In: aplica la clase de Tailwind 'opacity-100'
         carruselImage.classList.remove('opacity-0');
