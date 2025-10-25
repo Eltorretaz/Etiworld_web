@@ -56,7 +56,7 @@
     <!-- Videos -->
     <div class="w-full bg-white dark:bg-gray-900 py-10 px-8 grid grid-cols-1 sm:grid-cols-3 relative gap-3">
       <video id="video1" src="./assets/videos/video1.mp4" autoplay muted class="w-full rounded-3xl m-auto aspect-square object-cover sm:visible opacity-100 transition-opacity duration-250 ease-in-out"></video>
-      <video id="video2" src="./assets/videos/video6.mp4" autoplay muted class="w-full rounded-3xl m-auto aspect-square object-cover hidden sm:block opacity-100 transition-opacity duration-250 ease-in-out"></video>
+      <video id="video2" src="./assets/videos/video6.mp4" autoplay muted class="w-full rounded-3xl m-auto aspect-square object-cover opacity-100 transition-opacity duration-250 ease-in-out"></video>
       <video id="video3" src="./assets/videos/video11.mp4" autoplay muted class="w-full rounded-3xl m-auto aspect-square object-cover hidden sm:block opacity-100 transition-opacity duration-250 ease-in-out"></video>
     </div>
 
@@ -115,14 +115,6 @@
                 <img src="./assets/slider/slider-15.jpeg" alt="Entrega 15" class="object-cover h-72 sm:h-96 w-full rounded-lg hidden sm:block">
               </div>
             </div>
-            <!-- Slide 6 -->
-            <div class="w-full flex-shrink-0">
-              <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <img src="./assets/slider/slider-16.jpeg" alt="Entrega 16" class="object-cover h-72 sm:h-96 w-full rounded-lg">
-                <img src="./assets/slider/slider-17.jpeg" alt="Entrega 17" class="object-cover h-72 sm:h-96 w-full rounded-lg hidden sm:block">
-                <img src="./assets/slider/slider-18.jpeg" alt="Entrega 18" class="object-cover h-72 sm:h-96 w-full rounded-lg hidden sm:block">
-              </div>
-            </div>
           </div>
         </div>
         <button id="slider-next" class="absolute right-0 top-1/2 -translate-y-1/2 bg-green-500 hover:bg-green-600 text-white rounded-full p-2 z-10">
@@ -134,51 +126,9 @@
           <button class="w-3 h-3 rounded-full bg-green-400 opacity-30" data-index="2"></button>
           <button class="w-3 h-3 rounded-full bg-green-400 opacity-30" data-index="3"></button>
           <button class="w-3 h-3 rounded-full bg-green-400 opacity-30" data-index="4"></button>
-          <button class="w-3 h-3 rounded-full bg-green-400 opacity-30" data-index="5"></button>
         </div>
-        </div>
-        </div>
-        <script>
-          // Responsive: show 1 image per slide on small screens, 3 on larger
-          const sliderTrack = document.getElementById('slider-track');
-          const prevBtn = document.getElementById('slider-prev');
-          const nextBtn = document.getElementById('slider-next');
-          const dots = document.querySelectorAll('#slider-dots button');
-          let current = 0;
-          let slides = Array.from(sliderTrack.children);
-
-          function updateSlider() {
-            const isSmall = window.innerWidth < 640;
-            const slideWidth = sliderTrack.clientWidth;
-            // Each slide is 100% width, so translate by slideWidth * current
-            const translateX = -current * slideWidth;
-            sliderTrack.style.transform = `translateX(${translateX}px)`;
-            dots.forEach((dot, i) => {
-              dot.classList.toggle('opacity-70', i === current);
-              dot.classList.toggle('opacity-30', i !== current);
-            });
-          }
-
-          function goToSlide(idx) {
-            current = idx;
-            updateSlider();
-          }
-
-          prevBtn.onclick = () => {
-            current = (current - 1 + slides.length) % slides.length;
-            updateSlider();
-          };
-          nextBtn.onclick = () => {
-            current = (current + 1) % slides.length;
-            updateSlider();
-          };
-          dots.forEach((dot, i) => {
-            dot.onclick = () => goToSlide(i);
-          });
-
-          window.addEventListener('resize', updateSlider);
-          window.addEventListener('DOMContentLoaded', updateSlider);
-        </script>
+      </div>
+    </div>
 
     <!-- Nuestra Misión -->
     <div class="w-full mx-auto">
